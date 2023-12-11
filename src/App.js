@@ -1,21 +1,17 @@
-import logo from "./logo.svg";
+import MapContainer from "./Components/Map";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-      </header>
+      <div className="header">
+        <h1>India Toll Calculator</h1>
+        <h5>
+          This calculator helps you to find out the route of your journey and
+          total toll prices and fuel prices of your trip.
+        </h5>
+      </div>
+      <MapContainer />
     </div>
   );
 }
